@@ -28,7 +28,7 @@ class MovieController extends Controller
     public function show($id): JsonResponse
     {
         $movie = Movie::with(['broadcasts' => function ($query) {
-            $query->where('broadcasts_at', '>', now())->orderBy('broadcasts_at');
+            $query->where('broadcast_at', '>', now())->orderBy('broadcast_at');
         }])->findOrFail($id);
 
         return response()->json($movie);
@@ -57,7 +57,7 @@ class MovieController extends Controller
     {
         $validator = Validator::make($request->all(), [
             'channel_nr' => 'required|integer|min:1',
-            'broadcasts_at' => 'required|date_format:Y-m-d H:i:s',
+            'broadcast_at' => 'required|date_format:Y-m-d H:i:s',
         ]);
 
         if ($validator->fails()) {

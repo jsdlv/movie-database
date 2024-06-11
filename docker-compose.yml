@@ -9,6 +9,7 @@ services:
             dockerfile: Dockerfile
         image: laravel-app
         container_name: laravel-app
+        tty: true
         working_dir: /var/www
         volumes:
             - ./:/var/www
