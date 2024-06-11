@@ -1,0 +1,80 @@
+{
+	"info": {
+		"_postman_id": "90989c93-b33e-4de8-9bf4-263d5cc041c1",
+		"name": "Movie Database API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "36221863"
+	},
+	"item": [
+		{
+			"name": "Get Movies",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Get Movies by name",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Get movie by id",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Add Movie",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Add Broadcast",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Movie",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJpdiI6IlZkQ1NmOXRUQ1BmWGVnQnpwUzNzK0E9PSIsInZhbHVlIjoiUHpKN2E4NFl6SkZwT1JBcVB6U1RYYXE1WEZSTzFaMjZnNkt4TmIwSHRNWjZLeVZWZHk5S1d6MnVYWUtIdGpUZHl6V0E0UDNWb3Bpd3M0TE40dlp6UzQzQjNEM0p3Zm1NUG9xa1VUSXVWVFVhMDJxckUrNFZmbVRobXFTTWtZM20iLCJtYWMiOiJlYTA0NzQzYmZiZjFmN2U3MGJhNGY1OTk0NWYyMjVlZGVmZmYxYWYyMmZmN2U4NmE1Zjk3NDZjMDI1YTc0NGU5IiwidGFnIjoiIn0%3D",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/movies/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"movies",
+						"5"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

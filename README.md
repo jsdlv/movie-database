@@ -52,3 +52,5 @@ Lai lietotu šo aplikāciju izmantojot Docker, ievērojiet šos soļus:
 
 ## Lietošana
 
+1. **Postman lejupielāde**: izmanotiet Postman lietotni lejupielādējot to no [oficiālās vietnes](https://www.postman.com/downloads/).
+2. **Importējiet Postman kolekcijas failu**: Lejupielādējiet Postman kolekcijas failu [šeit](postman_collection.json). Pēc tam Postman lietotnē izvēlaties "Import" opciju un importējies šo kolekciju.
